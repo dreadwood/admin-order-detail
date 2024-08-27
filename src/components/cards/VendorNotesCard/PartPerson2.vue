@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import PartPerson from './PartPerson.vue'
 
-defineProps<{ state: 1 | 2 | 3 }>()
+withDefaults(defineProps<{ state: 1 | 2 | 3 }>(), {
+  state: 1
+})
 </script>
 
 <template>
