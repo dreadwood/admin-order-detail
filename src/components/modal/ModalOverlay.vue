@@ -9,7 +9,11 @@
 <style lang="less" scoped>
 @import '@style/common';
 .overlay {
+  .hide-scroll;
   position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   overflow: scroll;
   background-color: rgb(@color-black 0.5);
@@ -17,6 +21,6 @@
 }
 .modal-wrp {
   width: max-content;
-  margin: 0 auto;
+  margin: auto;
 }
 </style>

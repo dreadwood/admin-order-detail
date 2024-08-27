@@ -5,10 +5,10 @@ import ActvBtn from '@buttons/ActvBtn.vue'
 import EmptyBlock from '@common/EmptyBlock.vue'
 import TitleBlock from '@/components/common/TitleBlock.vue'
 
-import iconPhoneEl from '@assets/icons/call-phone.svg'
+import iconPhoneEl from '@assets/icons/call-voice.svg'
 import iconPlay from '@assets/icons/player-play.svg'
 import iconPause from '@assets/icons/player-pause.svg'
-import iconPhone from '@assets/icons/call-phone.svg?raw'
+import iconPhone from '@assets/icons/call-voice.svg?raw'
 import iconCross from '@assets/icons/call-cross.svg?raw'
 import iconUser from '@assets/icons/call-user.svg?raw'
 

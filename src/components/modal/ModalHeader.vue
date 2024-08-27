@@ -4,7 +4,6 @@ import { ref } from 'vue'
 import DeliveryMethodLabel from '@labels/DeliveryMethodLabel.vue'
 import OrderTypeLabel from '@labels/OrderTypeLabel.vue'
 
-import iconStar from '@icons/star.svg'
 import iconCopy from '@icons/copy.svg'
 import iconSnowflake from '@icons/snowflake.svg'
 import iconCross from '@icons/cross.svg'
@@ -12,19 +11,15 @@ import iconStarYellow from '@icons/star-yellow.svg'
 import iconCalendar from '@icons/calendar.svg'
 import iconMapPoint from '@icons/map-point.svg'
 import iconRefresh from '@icons/refresh.svg'
+import FavStarBtn from '../buttons/FavStarBtn.vue'
 
 const isBtnNumActiv = ref<boolean>(false)
-const isBtnFavActiv = ref<boolean>(false)
 
 const btnNumHandle = () => {
   isBtnNumActiv.value = true
   setTimeout(() => {
     isBtnNumActiv.value = false
   }, 1000)
-}
-
-const btnFanHandle = () => {
-  isBtnFavActiv.value = !isBtnFavActiv.value
 }
 </script>
 
@@ -44,14 +39,7 @@ const btnFanHandle = () => {
         #19245347
         <iconCopy />
       </button>
-      <button
-        class="btn-fav"
-        :class="{ actv: isBtnFavActiv }"
-        @click="btnFanHandle"
-        aria-label="add favorite"
-      >
-        <iconStar />
-      </button>
+      <FavStarBtn />
       <div class="info-snowflake">
         <iconSnowflake />
       </div>
@@ -147,29 +135,6 @@ const btnFanHandle = () => {
     svg {
       fill: @color-cornflower-blue;
     }
-  }
-}
-.btn-fav {
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  svg {
-    .transition(fill, stroke);
-    display: block;
-    width: 28px;
-    height: 28px;
-    fill: none;
-    stroke: @color-signal-blue;
-    stroke-width: 2px;
-  }
-  &:not(.actv):hover svg {
-    stroke: @color-purple-blue;
-  }
-  &.actv svg {
-    fill: @color-brilliant-greenish-yellow;
-    stroke: @color-brilliant-greenish-yellow;
   }
 }
 .info-snowflake {

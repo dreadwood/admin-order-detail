@@ -3,6 +3,7 @@ import PartQaqc from './PartQaqc.vue'
 import PartPerson from './PartPerson.vue'
 import PartDelivered from './PartDelivered.vue'
 import PartPhotoList from './PartPhotoList.vue'
+import PartPerson2 from './PartPerson2.vue'
 
 import BlueBtn from '@buttons/BlueBtn.vue'
 import TitleBlock from '@common/TitleBlock.vue'
@@ -42,6 +43,8 @@ import TitleBlock from '@common/TitleBlock.vue'
     <div class="separate"></div>
     <PartDelivered />
     <div class="separate"></div>
+    <PartPerson2 />
+    <div class="separate"></div>
     <PartQaqc />
   </div>
 </template>
@@ -54,6 +57,7 @@ import TitleBlock from '@common/TitleBlock.vue'
 .grid {
   display: grid;
   grid-template-columns: auto 35% 25%;
+  align-items: start;
   gap: 10px;
   margin-top: 12px;
 }

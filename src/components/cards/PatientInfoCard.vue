@@ -6,7 +6,7 @@ import CopyBtn from '@buttons/CopyBtn.vue'
 import TextDropdown from '@form/TextDropdown.vue'
 import TitleBlock from '@/components/common/TitleBlock.vue'
 
-import iconPhone from '@icons/phone.svg'
+import iconPhone from '@icons/call-phone.svg'
 import iconUser from '@icons/user.svg'
 import iconShare from '@icons/share.svg'
 import iconCheckOff from '@icons/checkbox-off.svg'

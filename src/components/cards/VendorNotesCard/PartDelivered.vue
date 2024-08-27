@@ -7,7 +7,6 @@ import iconGoogle from '@assets/icons/google-logo.svg'
 
 <template>
   <div class="wrp">
-    <!-- <div class="content"> -->
     <div>
       <TitleBlock text="Delivered to" type="small" tag="h4" />
       <div class="info">
@@ -32,7 +31,6 @@ import iconGoogle from '@assets/icons/google-logo.svg'
         </div>
       </div>
     </div>
-    <!-- </div> -->
 
     <div class="signature">
       <img src="/signature.png" width="132" height="90" alt="" />

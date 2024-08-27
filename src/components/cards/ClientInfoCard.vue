@@ -2,7 +2,7 @@ phone
 <script setup lang="ts">
 import CopyBtn from '@buttons/CopyBtn.vue'
 
-import iconPhone from '@icons/phone.svg'
+import iconPhone from '@icons/call-phone.svg'
 import iconShare from '@icons/share.svg'
 import TitleBlock from '@/components/common/TitleBlock.vue'
 </script>

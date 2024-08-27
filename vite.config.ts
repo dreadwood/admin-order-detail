@@ -21,6 +21,10 @@ export default defineConfig({
         replacement: fileURLToPath(new URL('./src/components', import.meta.url))
       },
       {
+        find: '@pages',
+        replacement: fileURLToPath(new URL('./src/pages', import.meta.url))
+      },
+      {
         find: '@style',
         replacement: fileURLToPath(
           new URL('./src/assets/less', import.meta.url)
