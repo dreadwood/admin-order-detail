@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import ModalFilters from '@/components/gigs/modal/ModalFilters.vue'
+import FiltersModal from '@/components/gigs/modal/FiltersModal.vue'
 import iconFilter from '@icons/filter.svg'
 
 const isOpen = ref<boolean>(false)
@@ -21,7 +21,7 @@ const closeModal = (evt: MouseEvent) => {
     <iconFilter />
     Filters
   </button>
-  <ModalFilters v-if="isOpen" :closeModal="closeModal" />
+  <FiltersModal v-if="isOpen" :closeModal="closeModal" />
 </template>
 
 <style lang="less" scoped>

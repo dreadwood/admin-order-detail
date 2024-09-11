@@ -8,9 +8,11 @@ import iconWallet from '@icons/wallet.svg'
 import iconPlus from '@icons/plus-circle.svg'
 import iconFridgeStorage from '@icons/fridge-storage.svg'
 import iconIcePack from '@icons/ice-pack.svg'
+import VendorModal from '../modal/VendorModal.vue'
 
 const isOpenDropVendor = ref<boolean>(true)
 const isOpenDropRate = ref<boolean>(true)
+const isOpen = ref<boolean>(false)
 
 const handleDropVendor = () => {
   isOpenDropVendor.value = !isOpenDropVendor.value
@@ -18,14 +20,27 @@ const handleDropVendor = () => {
 const handleDropRate = () => {
   isOpenDropRate.value = !isOpenDropRate.value
 }
+
+const openModal = () => {
+  isOpen.value = true
+}
+const closeModal = (evt: MouseEvent) => {
+  if (evt.currentTarget === evt.target) {
+    isOpen.value = false
+  }
+}
 </script>
 
 <template>
   <section class="vendor-card">
     <div class="top">
       <div class="card-title">Vendor Information</div>
-      <button class="btn-contract">View signed contract</button>
+      <button class="btn-contract" @click="openModal">
+        View signed contract
+      </button>
     </div>
+
+    <VendorModal v-if="isOpen" :closeModal="closeModal" />
 
     <PersonCard />
 
