@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import {
-  routesCallCenter,
-  // routesGigs,
-  routesOrderDetail
-} from '@/router'
+import { routesCallCenter, routesGigs, routesOrderDetail } from '@/router'
 </script>
 
 <template>
@@ -17,12 +13,12 @@ import {
       </li>
     </ul>
 
-    <!-- <h2>Gigs</h2>
+    <h2>Gigs</h2>
     <ul>
       <li v-for="it in routesGigs" :key="it.path">
         <RouterLink :to="it.path">Go to {{ it.name }}</RouterLink>
       </li>
-    </ul> -->
+    </ul>
 
     <h2>Call Center</h2>
     <ul>

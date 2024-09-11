@@ -5,7 +5,7 @@ import iconMagnifier from '@icons/magnifier.svg'
 <template>
   <div class="field-search">
     <input type="search" placeholder="Search..." />
-    <iconMagnifier />
+    <iconMagnifier class="icon" />
   </div>
 </template>
 
@@ -44,14 +44,15 @@ import iconMagnifier from '@icons/magnifier.svg'
       opacity: 0;
     }
   }
-  svg {
-    position: absolute;
-    top: 50%;
-    right: 12px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    transform: translateY(-50%);
-  }
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  fill: @color-very-pale-blue-3;
 }
 </style>

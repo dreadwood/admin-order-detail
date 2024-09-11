@@ -21,6 +21,18 @@ export default defineConfig({
         replacement: fileURLToPath(new URL('./src/components', import.meta.url))
       },
       {
+        find: '@common',
+        replacement: fileURLToPath(
+          new URL('./src/components/common', import.meta.url)
+        )
+      },
+      {
+        find: '@gigs',
+        replacement: fileURLToPath(
+          new URL('./src/components/gigs', import.meta.url)
+        )
+      },
+      {
         find: '@pages',
         replacement: fileURLToPath(new URL('./src/pages', import.meta.url))
       },
@@ -46,12 +58,6 @@ export default defineConfig({
         find: '@cards',
         replacement: fileURLToPath(
           new URL('./src/components/cards', import.meta.url)
-        )
-      },
-      {
-        find: '@common',
-        replacement: fileURLToPath(
-          new URL('./src/components/common', import.meta.url)
         )
       },
       {

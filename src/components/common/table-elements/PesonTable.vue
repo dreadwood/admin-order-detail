@@ -1,11 +1,18 @@
 <script setup lang="ts">
 import CopyBtn from '@buttons/CopyBtn.vue'
 
-defineProps<{ name: string; photo: string }>()
+withDefaults(defineProps<{ type?: 1 | 2; name: string; photo: string }>(), {
+  type: 1
+})
 </script>
 
 <template>
-  <div class="person">
+  <div
+    class="person"
+    :class="{
+      style2: type === 2
+    }"
+  >
     <div class="photo">
       <img :src="`/${photo}`" width="40" height="40" alt="" />
     </div>
@@ -29,6 +36,9 @@ defineProps<{ name: string; photo: string }>()
   line-height: 16px;
   font-weight: 400;
   color: @color-gray-blue;
+  &.style2 {
+    font-size: 16px;
+  }
 }
 .photo {
   flex-shrink: 0;

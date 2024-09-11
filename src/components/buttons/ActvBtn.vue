@@ -7,7 +7,7 @@ const props = withDefaults(
     className?: string
     isActv?: boolean
     icon?: string
-    type?: 1 | 2 | 3 | 4 | 5 | 6 | 7
+    type?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
   }>(),
   {
     type: 1
@@ -34,7 +34,8 @@ const btnHandle = () => {
         style4: type === 4,
         style5: type === 5,
         style6: type === 6,
-        style7: type === 7
+        style7: type === 7,
+        style8: type === 8
       }
     ]"
     @click="btnHandle"
@@ -56,6 +57,7 @@ const btnHandle = () => {
   font-family: @font-default;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
   color: @color-signal-blue;
   background-color: @color-very-pale-blue-2;
   border: 0;
@@ -156,6 +158,17 @@ const btnHandle = () => {
         color: @color-white;
         background-color: @color-radical-red;
       }
+    }
+  }
+  &.style8 {
+    padding: 7px 12px;
+    font-size: 16px;
+    line-height: 19px;
+    color: @color-signal-blue;
+    background-color: @color-periwinkle-crayola-3;
+    &.actv {
+      color: @color-white;
+      background-color: @color-cornflower-blue;
     }
   }
 }

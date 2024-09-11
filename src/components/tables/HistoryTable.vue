@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PesonTable from '@common/PesonTable.vue'
+import PesonTable from '@/components/common/table-elements/PesonTable.vue'
 import StatusLabel from '../labels/StatusLabel.vue'
 
 defineProps<{ type: 1 | 2 }>()

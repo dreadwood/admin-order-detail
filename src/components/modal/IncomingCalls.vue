@@ -176,7 +176,7 @@ import StatusLabel2 from '@/components/labels/StatusLabel2.vue'
   border-radius: 30px;
   &:not([disabled]):hover,
   &:not([disabled]):focus-visible {
-    background-color: rgb(@color-mountain-meadow 0.9);
+    background-color: @color-dark-pastel-green;
     cursor: pointer;
   }
   svg {
@@ -189,7 +189,7 @@ import StatusLabel2 from '@/components/labels/StatusLabel2.vue'
     background-color: @color-radical-red;
     &:not([disabled]):hover,
     &:not([disabled]):focus-visible {
-      background-color: rgb(@color-radical-red 0.9);
+      background-color: @color-red;
     }
   }
 }

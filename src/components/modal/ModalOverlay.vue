@@ -1,5 +1,11 @@
+<script setup lang="ts">
+defineProps<{
+  closeModal?: (evt: MouseEvent) => void
+}>()
+</script>
+
 <template>
-  <div class="overlay">
+  <div class="overlay" @click="closeModal">
     <div class="modal-wrp">
       <slot></slot>
     </div>

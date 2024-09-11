@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SearchElement from '@form/SearchElement.vue'
 import imgLogoPlaceholder from '@assets/img/placeholder-vertical.jpg'
+import SearchElement from '@components/common/form/SearchElement.vue'
 
 defineProps<{ title: string }>()
 </script>
@@ -12,7 +12,7 @@ defineProps<{ title: string }>()
       <slot></slot>
     </div>
     <form class="account-page__search" role="search">
-      <SearchElement />
+      <SearchElement class="search-element" />
     </form>
     <div class="logo">
       <img :src="imgLogoPlaceholder" width="40" height="40" alt="" />
@@ -40,6 +40,9 @@ defineProps<{ title: string }>()
 }
 .content {
   flex-grow: 1;
+}
+.search-element {
+  width: 240px;
 }
 .logo {
   width: 40px;

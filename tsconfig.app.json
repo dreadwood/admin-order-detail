@@ -27,6 +27,8 @@
       "@/*": ["./src/*"],
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
+      "@common/*": ["./src/components/common/*"],
+      "@gigs/*": ["./src/components/gigs/*"],
       "@pages/*": ["./src/pages/*"],
 
       "@style/*": ["./src/assets/less/*"],
@@ -34,7 +36,6 @@
 
       "@buttons/*": ["./src/components/buttons/*"],
       "@cards/*": ["./src/components/cards/*"],
-      "@common/*": ["./src/components/common/*"],
       "@form/*": ["./src/components/form/*"],
       "@labels/*": ["./src/components/labels/*"],
       "@tables/*": ["./src/components/tables/*"],
